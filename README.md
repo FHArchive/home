@@ -1,26 +1,26 @@
 <p float="left">
-<img src="https://img.shields.io/github/languages/top/fredhappyface/repo-name.svg?style=flat-square" alt="Github top language">
-<img src="https://img.shields.io/codacy/grade/codacy-id.svg?style=flat-square" alt="Codacy grade">
-<img src="https://img.shields.io/codacy/coverage/codacy-id.svg?style=flat-square" alt="Codacy coverage">
-<img src="https://img.shields.io/github/repo-size/fredhappyface/repo-name.svg?style=flat-square" alt="Repository size">
-<img src="https://img.shields.io/github/issues/fredhappyface/repo-name.svg?style=flat-square" alt="Issues">
-<img src="https://img.shields.io/github/license/fredhappyface/repo-name.svg?style=flat-square" alt="License">
-<img src="https://img.shields.io/github/commit-activity/m/fredhappyface/repo-name.svg?style=flat-square" alt="Commit activity">
-<img src="https://img.shields.io/github/last-commit/fredhappyface/repo-name.svg?style=flat-square" alt="Last commit">
+<img src="https://img.shields.io/github/languages/top/fredhappyface/PWA.Home.svg?style=flat-square" alt="Github top language">
+<img src="https://img.shields.io/codacy/grade/4c0aca77613b4a068a567cfa8296df9c.svg?style=flat-square" alt="Codacy grade">
+<img src="https://img.shields.io/codacy/coverage/4c0aca77613b4a068a567cfa8296df9c.svg?style=flat-square" alt="Codacy coverage">
+<img src="https://img.shields.io/github/repo-size/fredhappyface/PWA.Home.svg?style=flat-square" alt="Repository size">
+<img src="https://img.shields.io/github/issues/fredhappyface/PWA.Home.svg?style=flat-square" alt="Issues">
+<img src="https://img.shields.io/github/license/fredhappyface/PWA.Home.svg?style=flat-square" alt="License">
+<img src="https://img.shields.io/github/commit-activity/m/fredhappyface/PWA.Home.svg?style=flat-square" alt="Commit activity">
+<img src="https://img.shields.io/github/last-commit/fredhappyface/PWA.Home.svg?style=flat-square" alt="Last commit">
 </p>
 
 
-# repo-name
+# PWA.Home
 
-desc
+FredHappyface App Launcher provides links to web-based projects.
 
-Find the site on https://FredHappyface.github.io/repo-name
+Find the site on https://FredHappyface.github.io/PWA.Home
 
 <img src="readme-assets/icons/proj-icon.png" alt="Project Icon" width="100">
 
 
 ## Language information
-repo-name is built with HTML5, CSS3 and JavaScript
+PWA.Home is built with HTML5, CSS3 and JavaScript
 
 ## Changelog
 
