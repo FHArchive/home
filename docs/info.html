@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="https://fredhappyface.github.io/css/main.css">
+	<script>
+		if ("serviceWorker" in navigator) {
+			window.addEventListener("load", function () {
+				navigator.serviceWorker.register("/PWA.Home/sw.js", {scope: "/PWA.Home/"}).then(
+					function (registration) {
+						// Registration was successful
+						console.log("ServiceWorker registration successful with scope: ", registration.scope);
+					},
+					function (err) {
+						// registration failed :(
+						console.log("ServiceWorker registration failed: ", err);
+					});
+			});
+		}
+
+		var DEFAULT = {
+			theme: 'auto',
+			text: '1'
+		};
+
+		var data;
+		/* read data from local storage */
+		if (localStorage.getItem('com.fredhappyface') !== null) {
+			data = JSON.parse(localStorage.getItem('com.fredhappyface'));
+		}
+		else {
+			console.log('Your Browser does not support local storage or no data saved. Loading default data.');
+			data = DEFAULT;
+		}
+
+		// set the theme to the appropriate css
+		document.head.innerHTML += '<link rel="stylesheet" href="https://fredhappyface.github.io/css/theme/' + data.theme + '.css"  id="theme">';
+
+		// set the text size
+		var declaration = document.styleSheets[0].cssRules[0].style;
+		declaration.setProperty("--text-mod", data.text)
+	</script>
+
+	<meta name="Description" content="Author: FredHappyface; Category: Cryptography,
+	Proof of concept; Cost: Free">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!--Android app icon-->
+	<link rel="manifest" href="/PWA.Home/manifest.json">
+	<meta name="theme-color" content="#000000" />
+
+	<!--iOS touch icon-->
+	<link rel="apple-touch-icon" href="images/appicons/apple-icon-180x180.png">
+
+	<!--Bookmark, Browser favicon-->
+	<link rel="icon" type="image/png" sizes="32x32" href="images/appicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/appicons/favicon-16x16.png">
+
+	<!--Windows 8, 10 tile -->
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="images/appicons/ms-icon-150x150.png">
+	<meta name="msapplication-starturl" content="/index.html">
+
+	<!--Title-->
+	<title>FredHappyface About</title>
+
+
+</head>
+
+<body>
+
+	<div class="section-nav c-app-bar">
+
+			<div class="app-bar">
+				<div class="section__content">
+					<div class="left">
+						<h2>BlackC4t</h2>
+					</div>
+					<div class="img--scale app__icon right" style="width: 2.5em;" onclick="window.history.back()">
+						<img src="images/pageicons/round-keyboard_backspace-white-24px.svg" alt="Back">
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	<div class="navigation-buffer">
+	</div>
+
+	<div class="c-toast" id="js-toast" ><p id="toast-text"></p>
+	</div>
+
+	<div class="section c-primary">
+		<div class="section__content">
+			<div class="img--scale left" style="width: 4.5em;">
+				<img src="images/page/blackc4t.svg" alt="BlackC4t">
+			</div>
+			<h1>About</h1>
+
+		</div>
+	</div>
+
+
+	<div class="section c-secondary">
+		<div class="section__content">
+
+			<h1>Browsers</h1>
+			<h2>Supported</h2>
+			<p>This PWA is optimised for the following browsers and has been tested on them: </p>
+			<div class="row ">
+				<div class="icon icon--browser">
+					<img src="images/page/browsers/chrome.png" alt="Google Chrome">
+					<p>Google Chrome</p>
+				</div>
+				<div class="icon icon--browser">
+					<img src="images/page/browsers/chromium.png" alt="Chromium Based Browsers">
+					<p>Chromium Based Browsers</p>
+				</div>
+				<div class="icon icon--browser">
+					<img src="images/page/browsers/safari.png" alt="Safari">
+					<p>Safari</p>
+				</div>
+			</div>
+
+			<h2>Partial Support</h2>
+			<p>This PWA should function on these browsers but some elements may look odd:</p>
+			<div class="row ">
+				<div class="icon icon--browser">
+					<img src="images/page/browsers/firefox.png" alt="Firefox">
+					<p>Firefox</p>
+				</div>
+				<div class="icon icon--browser">
+					<img src="images/page/browsers/ms-edge.png" alt="Microsoft Edge">
+					<p>Microsoft Edge</p>
+				</div>
+
+			</div>
+
+			<h2>Unsupported</h2>
+			<p>This PWA is not supported on these browsers, functionality and visuals may not work as expected:</p>
+			<div class="row ">
+				<div class="icon icon--browser">
+					<img src="images/page/browsers/ie.png" alt="Internet Explorer">
+					<p>Internet Explorer</p>
+				</div>
+				<div class="icon icon--browser">
+					<img src="images/page/browsers/tor.png" alt="TOR">
+					<p>TOR Browser</p>
+				</div>
+				<div class="icon icon--browser">
+					<img src="images/page/browsers/browser.png" alt="Other Browsers">
+					<p>Other Browsers</p>
+				</div>
+
+			</div>
+
+
+		</div>
+	</div>
+
+
+
+
+	<script src="https://fredhappyface.github.io/scripts/script.js"></script>
+
+
+</body>
+
+</html>

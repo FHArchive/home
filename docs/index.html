@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="https://fredhappyface.github.io/css/main.css">
+	<script>
+		if ("serviceWorker" in navigator) {
+			window.addEventListener("load", function () {
+				navigator.serviceWorker.register("/PWA.Home/sw.js", {scope: "/PWA.Home"}).then(
+					function (registration) {
+						// Registration was successful
+						console.log("ServiceWorker registration successful with scope: ", registration.scope);
+					},
+					function (err) {
+						// registration failed :(
+						console.log("ServiceWorker registration failed: ", err);
+					});
+			});
+		}
+
+		var DEFAULT = {
+			theme: 'auto',
+			text: '1',
+			iconTopLeft: '50%',
+			iconTopRight: '50%',
+			iconBottomLeft: '50%',
+			iconBottomRight: '50%'
+		};
+
+		var data;
+		/* read data from local storage */
+		if (localStorage.getItem('com.fredhappyface') !== null) {
+			data = JSON.parse(localStorage.getItem('com.fredhappyface'));
+		}
+		else {
+			console.log('Your Browser does not support local storage or no data saved. Loading default data.');
+			data = DEFAULT;
+		}
+
+		// set the theme to the appropriate css
+		document.head.innerHTML += '<link rel="stylesheet" href="https://fredhappyface.github.io/css/theme/' + data.theme + '.css"  id="theme">';
+
+		// set the text size
+		var declaration = document.styleSheets[0].cssRules[0].style;
+		declaration.setProperty("--text-mod", data.text)
+
+		// set icon shape
+		declaration.setProperty("--var-icon-top-left", data.iconTopLeft)
+		declaration.setProperty("--var-icon-top-right", data.iconTopRight)
+		declaration.setProperty("--var-icon-bottom-left", data.iconBottomLeft)
+		declaration.setProperty("--var-icon-bottom-right", data.iconBottomRight)
+	</script>
+
+	<meta name="Description" content="Author: FredHappyface; Category: Cryptography,
+	Proof of concept; Cost: Free">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!--Android app icon-->
+	<link rel="manifest" href="/PWA.Home/manifest.json">
+	<meta name="theme-color" content="#000000" />
+
+	<!--iOS touch icon-->
+	<link rel="apple-touch-icon" href="images/appicons/apple-icon-180x180.png">
+
+	<!--Bookmark, Browser favicon-->
+	<link rel="icon" type="image/png" sizes="512x512" href="images/appicons/android-icon-512x512.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/appicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/appicons/favicon-16x16.png">
+
+	<!--Windows 8, 10 tile -->
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="images/appicons/ms-icon-150x150.png">
+	<meta name="msapplication-starturl" content="/index.html">
+
+	<!--Title-->
+	<title>FredHappyface App Launcher </title>
+
+
+</head>
+
+<body>
+
+
+	<div class="section-nav c-app-bar">
+
+		<div class="app-bar">
+			<div class="section__content">
+				<div class="left">
+					<h2>App Launcher </h2>
+				</div>
+				<div class="pair pair--item right">
+					<a href="info.html">
+						<div class="img img--scale app__icon" style="width: 2.5em;">
+							<img src="images/pageicons/round-info-white-24px.svg" alt="Information">
+						</div>
+					</a>
+					<a href="settings.html">
+						<div class="img img--scale app__icon" style="width: 2.5em;">
+							<img src="images/pageicons/round-settings-white-24px.svg" alt="settings">
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+	<div class="navigation-buffer">
+	</div>
+
+	<div id="js-toast" >
+		<div><p id="js-toast__text" class="c-toast"></p></div>
+	</div>
+
+	<div class="section c-secondary">
+		<div class="section__content">
+			<div class="img img--scale left" style="width: 4.5em;">
+				<img src="images/appicons/ms-icon-310x310.png" alt="App Launcher">
+			</div>
+
+			<h1>App Launcher</h1>
+
+
+		</div>
+	</div>
+
+	<div class="section c-primary">
+		<div class="section__content">
+			<div class="row ">
+				<div class="icon icon--pwa">
+						<a href="https://fredhappyface.github.io/PWA.Bl4ckCat"><img src="images/page/bl4ckcat.png" alt="Bl4ckCat"></a>
+				</div>
+				<div class="icon icon--pwa">
+						<a href="https://fredhappyface.github.io/PWA.HappyShibe"><img src="images/page/happyshibe.png" alt="Happy Shibe"></a>
+				</div>
+
+			</div>
+
+
+		</div>
+	</div>
+
+	<script src="https://fredhappyface.github.io/scripts/script.js"></script>
+
+
+</body>
+
+</html>
