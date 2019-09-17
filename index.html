@@ -7,7 +7,7 @@
 	<script>
 		if ("serviceWorker" in navigator) {
 			window.addEventListener("load", function () {
-				navigator.serviceWorker.register("/PWA.Home/sw.js", {scope: "/PWA.Home"}).then(
+				navigator.serviceWorker.register("/PWA.Home/sw.js", {scope: "/PWA.Home/"}).then(
 					function (registration) {
 						// Registration was successful
 						console.log("ServiceWorker registration successful with scope: ", registration.scope);
