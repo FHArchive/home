@@ -1,6 +1,19 @@
 ﻿const cacheVersion = "fredhappyface";
 const urlsToPrefetch = [
-  "/PWA.Home/"
+  "/PWA.Home/",
+  "/PWA.Home/info.html",
+  "/PWA.Home/settings.html",
+
+
+  "/css/theme/auto.css",
+  "/css/theme/black.css",
+  "/css/theme/dark.css",
+  "/css/theme/light.css",
+  "/css/main.css",
+  "/css/settings.css",
+  "/scripts/navbar.js",
+  "/scripts/script.js",
+  "/scripts/settings.js"
 ];
 
 
