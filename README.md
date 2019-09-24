@@ -12,12 +12,11 @@
 
 # PWA.Home
 
+<img src="readme-assets/icons/proj-icon.png" alt="Project Icon" width="100">
+
 FredHappyface App Launcher provides links to web-based projects.
 
 Find the site on https://FredHappyface.github.io/PWA.Home
-
-<img src="readme-assets/icons/proj-icon.png" alt="Project Icon" width="100">
-
 
 ## Language information
 PWA.Home is built with HTML5, CSS3 and JavaScript
