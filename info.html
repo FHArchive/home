@@ -6,24 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="https://fredhappyface.github.io/css/main.css">
 	<script>
 		if ("serviceWorker" in navigator) {
-			window.addEventListener("load", function () {
-				navigator.serviceWorker.register("/PWA.Home/sw.js", {scope: "/PWA.Home/"}).then(
-					function (registration) {
-						// Registration was successful
-						console.log("ServiceWorker registration successful with scope: ", registration.scope);
-					},
-					function (err) {
-						// registration failed :(
-						console.log("ServiceWorker registration failed: ", err);
-					});
-			});
+				navigator.serviceWorker.register("/PWA.Home/sw.js", {scope: "/PWA.Home/"});
 		}
-
-		var DEFAULT = {
-			theme: 'auto',
-			text: '1'
-		};
-
 		var data;
 		/* read data from local storage */
 		if (localStorage.getItem('com.fredhappyface') !== null) {
@@ -31,12 +15,13 @@
 		}
 		else {
 			console.log('Your Browser does not support local storage or no data saved. Loading default data.');
-			data = DEFAULT;
+			data = {
+				theme: 'auto',
+				text: '1'
+			};
 		}
-
 		// set the theme to the appropriate css
 		document.head.innerHTML += '<link rel="stylesheet" href="https://fredhappyface.github.io/css/theme/' + data.theme + '.css"  id="theme">';
-
 		// set the text size
 		var declaration = document.styleSheets[0].cssRules[0].style;
 		declaration.setProperty("--text-mod", data.text)
@@ -59,7 +44,7 @@
 
 	<!--Windows 8, 10 tile -->
 	<meta name="msapplication-TileColor" content="#5270ff">
-	<meta name="msapplication-TileImage" sizes="310x310" content="images/appicons/square-512.png">
+	<meta name="msapplication-TileImage" sizes="150x150" content="images/appicons/square-180.png">
 	<meta name="msapplication-starturl" content="/PWA.Home/">
 
 	<!--Title-->
