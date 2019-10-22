@@ -3,7 +3,6 @@
   "short_name": "FredHappyface",
   "lang": "en-GB",
   "start_url": "/PWA.Home/",
-  "scope": "/PWA.Home/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#5270ff",
