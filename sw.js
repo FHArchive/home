@@ -1,4 +1,4 @@
-﻿const cacheVersion = "Home-2019.11.1";
+﻿const cacheVersion = "Home-2019.11.2";
 const urlsToPrefetch = [
 	"/PWA.Home/",
 	"/PWA.Home/index.html",
