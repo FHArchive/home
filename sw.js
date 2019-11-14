@@ -31,12 +31,8 @@ const urlsToPrefetch = [
 	"/scripts/navbar.js",
 	"/scripts/script.js",
 	"/scripts/settings.js",
-	"/images/pageicons/info.svg",
-	"/images/pageicons/settings.svg",
-	"/images/pageicons/keyboard_backspace.svg",
-	"/images/appicons/squircle-256.png"
+	"/fonts/FiraSansNF.woff2",
 ];
-
 
 self.addEventListener("install", function (event) {
 	event.waitUntil(
@@ -46,11 +42,11 @@ self.addEventListener("install", function (event) {
 	);
 });
 
-self.addEventListener("activate", function(event) {
+self.addEventListener("activate", function (event) {
 	event.waitUntil(
-		caches.keys().then(function(keyList){
-			return Promise.all(keyList.map(function(key){
-				if (key !== cacheVersion){
+		caches.keys().then(function (keyList) {
+			return Promise.all(keyList.map(function (key) {
+				if (key !== cacheVersion) {
 					return caches.delete(key);
 				}
 			}));
@@ -59,10 +55,26 @@ self.addEventListener("activate", function(event) {
 	return self.clients.claim();
 });
 
-self.addEventListener("fetch", (event) => {
-  let responsePromise = caches.match(event.request).then((response) => {
-    return response || fetch(event.request);
-  });
-
-  event.respondWith(responsePromise);
+self.addEventListener('fetch', function (event) {
+	event.respondWith(fromNetwork(event.request, 400).catch(function () {
+		return fromCache(event.request);
+	}));
 });
+
+function fromNetwork(request, timeout) {
+	return new Promise(function (fulfill, reject) {
+		var timeoutId = setTimeout(reject, timeout);
+		fetch(request).then(function (response) {
+			clearTimeout(timeoutId);
+			fulfill(response);
+		}, reject);
+	});
+}
+
+function fromCache(request) {
+	return caches.open(cacheVersion).then(function (cache) {
+		return cache.match(request).then(function (matching) {
+			return matching || Promise.reject('no-match');
+		});
+	});
+}
