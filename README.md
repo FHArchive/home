@@ -1,18 +1,18 @@
 <p float="left">
-<img src="https://img.shields.io/github/languages/top/fredhappyface/PWA.Home.svg?style=flat-square" alt="Github top language">
-<img src="https://img.shields.io/codacy/grade/4c0aca77613b4a068a567cfa8296df9c.svg?style=flat-square" alt="Codacy grade">
-<img src="https://img.shields.io/codacy/coverage/4c0aca77613b4a068a567cfa8296df9c.svg?style=flat-square" alt="Codacy coverage">
-<img src="https://img.shields.io/github/repo-size/fredhappyface/PWA.Home.svg?style=flat-square" alt="Repository size">
-<img src="https://img.shields.io/github/issues/fredhappyface/PWA.Home.svg?style=flat-square" alt="Issues">
-<img src="https://img.shields.io/github/license/fredhappyface/PWA.Home.svg?style=flat-square" alt="License">
-<img src="https://img.shields.io/github/commit-activity/m/fredhappyface/PWA.Home.svg?style=flat-square" alt="Commit activity">
-<img src="https://img.shields.io/github/last-commit/fredhappyface/PWA.Home.svg?style=flat-square" alt="Last commit">
+<a href="../../"><img src="https://img.shields.io/github/languages/top/fredhappyface/PWA.Home.svg?style=flat-square" alt="Github top language"></a>
+<a href="https://www.codacy.com/manual/FredHappyface/PWA.Home"><img src="https://img.shields.io/codacy/grade/4c0aca77613b4a068a567cfa8296df9c.svg?style=flat-square" alt="Codacy grade"></a>
+<a href="https://www.codacy.com/manual/FredHappyface/PWA.Home"><img src="https://img.shields.io/codacy/coverage/4c0aca77613b4a068a567cfa8296df9c.svg?style=flat-square" alt="Codacy coverage"></a>
+<a href="../../"><img src="https://img.shields.io/github/repo-size/fredhappyface/PWA.Home.svg?style=flat-square" alt="Repository size"></a>
+<a href="../../issues"><img src="https://img.shields.io/github/issues/fredhappyface/PWA.Home.svg?style=flat-square" alt="Issues"></a>
+<a href="/LICENSE.md"><img src="https://img.shields.io/github/license/fredhappyface/PWA.Home.svg?style=flat-square" alt="License"></a>
+<a href="../../commits/master"><img src="https://img.shields.io/github/commit-activity/m/fredhappyface/PWA.Home.svg?style=flat-square" alt="Commit activity"></a>
+<a href="../../commits/master"><img src="https://img.shields.io/github/last-commit/fredhappyface/PWA.Home.svg?style=flat-square" alt="Last commit"></a>
 </p>
 
 
 # PWA.Home
 
-<img src="readme-assets/icons/proj-icon.png" alt="Project Icon" width="100">
+<img src="readme-assets/icons/name.png" alt="Project Icon" width="750">
 
 The nexus for all things FredHappyface... Provides links to
 other web-based projects, information on projects and supported
