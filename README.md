@@ -25,6 +25,8 @@ Find the site on https://FredHappyface.github.io/PWA.Home
 PWA.Home is built with HTML5, CSS3 and JavaScript
 
 ## Changelog
+See the [CHANGELOG](/CHANGELOG.md) for more information.
+
 
 ## Download
 ### Clone
@@ -110,21 +112,21 @@ Other Browsers
 ### Desktop
 |Screenshots|
 |:-:|
-| <img src="readme-assets/screenshots/desktop/screenshot-1.png" alt="Screenshot 1" width="600"> |
-| <img src="readme-assets/screenshots/desktop/screenshot-2.png" alt="Screenshot 2" width="600"> |
-| <img src="readme-assets/screenshots/desktop/screenshot-3.png" alt="Screenshot 3" width="600"> |
+| <img src="readme-assets/screenshots/desktop/screenshot-0.png" alt="Screenshot 1" width="600"> |
+| <img src="readme-assets/screenshots/desktop/screenshot-1.png" alt="Screenshot 2" width="600"> |
+| <img src="readme-assets/screenshots/desktop/screenshot-2.png" alt="Screenshot 3" width="600"> |
 
 
 
 ### Mobile
 |Screenshots| |
 |:-:|:-:|
-| <img src="readme-assets/screenshots/mobile/screenshot-1.png" alt="Screenshot 1" width="300"> | <img src="readme-assets/screenshots/mobile/screenshot-2.png" alt="Screenshot 2" width="300"> |
-| <img src="readme-assets/screenshots/mobile/screenshot-3.png" alt="Screenshot 3" width="300"> | <img src="readme-assets/screenshots/mobile/screenshot-4.png" alt="Screenshot 4" width="300"> |
+| <img src="readme-assets/screenshots/mobile/screenshot-0.png" alt="Screenshot 1" width="300"> | <img src="readme-assets/screenshots/mobile/screenshot-1.png" alt="Screenshot 2" width="300"> |
+| <img src="readme-assets/screenshots/mobile/screenshot-2.png" alt="Screenshot 3" width="300"> | <img src="readme-assets/screenshots/mobile/screenshot-3.png" alt="Screenshot 4" width="300"> |
 
 
 
 ### Themes
 |Light|Dark|Black|
 |:-:|:-:|:-:|
-| <img src="readme-assets/screenshots/themes/theme-1.png" alt="Theme 1" width="200"> | <img src="readme-assets/screenshots/themes/theme-2.png" alt="Theme 2" width="200"> | <img src="readme-assets/screenshots/themes/theme-3.png" alt="Theme 3" width="200"> |
+| <img src="readme-assets/screenshots/themes/theme-0.png" alt="Theme 1" width="200"> | <img src="readme-assets/screenshots/themes/theme-1.png" alt="Theme 2" width="200"> | <img src="readme-assets/screenshots/themes/theme-2.png" alt="Theme 2" width="200"> |
