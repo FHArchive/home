@@ -13,7 +13,8 @@
 		/* read data from local storage */
 		let settingData = JSON.parse(localStorage.getItem('com.fredhappyface'));
 		const rootStyles = document.styleSheets[0].cssRules[0].style;
-		const darkStyles = document.styleSheets[0].cssRules[1].cssRules[0].style;		declaration.setProperty("--text-mod", (settingData.textSize.size ? settingData.textSize.size : "1"))
+		const darkStyles = document.styleSheets[0].cssRules[1].cssRules[0].style;
+		rootStyles.setProperty("--text-mod", (settingData.textSize.size ? settingData.textSize.size : "1"))
 		if (settingData.theme.name !== "auto"){
 			rootStyles.setProperty("--var-c-primary", (settingData.theme.cPrimary ? settingData.theme.cPrimary : "#FAFAFA"))
 			rootStyles.setProperty("--var-c-secondary", (settingData.theme.cSecondary ? settingData.theme.cSecondary : "#EAEAEB"))
