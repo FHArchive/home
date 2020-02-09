@@ -15,7 +15,7 @@
 		const rootStyles = document.styleSheets[0].cssRules[0].style;
 		const darkStyles = document.styleSheets[0].cssRules[1].cssRules[0].style;
 		rootStyles.setProperty("--text-mod", (settingData.textSize.size ? settingData.textSize.size : "1"))
-		if (settingData.theme.name !== "auto"){
+		if (settingData.theme.name !== "auto") {
 			rootStyles.setProperty("--var-c-primary", (settingData.theme.cPrimary ? settingData.theme.cPrimary : "#FAFAFA"))
 			rootStyles.setProperty("--var-c-secondary", (settingData.theme.cSecondary ? settingData.theme.cSecondary : "#EAEAEB"))
 			rootStyles.setProperty("--var-c-text", (settingData.theme.cText ? settingData.theme.cText : "#383A42"))
@@ -89,7 +89,7 @@
 		<div class="section__content">
 			<h2>Theme:</h2>
 			<div class="row">
-				<div class="icon icon--setting">
+				<div class="icon icon--grid-xl">
 					<label class="css-radio" for="light">
 						Light Theme
 						<input type="radio" name="themeR" value="1" id="light" checked="checked" onclick="saveTheme()">
@@ -105,7 +105,7 @@
 					</label>
 
 				</div>
-				<div class="icon icon--setting">
+				<div class="icon icon--grid-xl">
 					<label class="css-radio" for="dark">
 						Dark Theme
 						<input type="radio" name="themeR" value="2" id="dark" onclick="saveTheme()">
@@ -121,48 +121,49 @@
 					</label>
 
 				</div>
-			</div>
-			<div class="icon icon--setting">
-				<label class="css-radio" for="black">
-					Black Theme
-					<input type="radio" name="themeR" value="3" id="black" onclick="saveTheme()">
-					<span class="check-mark"></span>
-					<div class="setting-preview">
-						<div class="section__content--settings primary--black">
-							<h2>The quick brown fox</h2>
-						</div>
-						<div class="section__content--settings secondary--black">
-							<p>The quick brown fox jumps over the lazy dog</p>
-						</div>
-					</div>
-				</label>
 
-			</div>
-			<div class="icon icon--setting">
-				<label class="css-radio" for="auto">
-					Automatic Theme
-					<input type="radio" name="themeR" value="4" id="auto" onclick="saveTheme()">
-					<span class="check-mark"></span>
-					<div class="pair setting-preview">
-						<div>
-							<div class="section__content--settings primary--auto-left">
-								<h2>&#127772; The quick brown fox</h2>
+				<div class="icon icon--grid-xl">
+					<label class="css-radio" for="black">
+						Black Theme
+						<input type="radio" name="themeR" value="3" id="black" onclick="saveTheme()">
+						<span class="check-mark"></span>
+						<div class="setting-preview">
+							<div class="section__content--settings primary--black">
+								<h2>The quick brown fox</h2>
 							</div>
-							<div class="section__content--settings secondary--auto-left">
+							<div class="section__content--settings secondary--black">
 								<p>The quick brown fox jumps over the lazy dog</p>
 							</div>
 						</div>
-						<div>
-							<div class="section__content--settings primary--auto-right">
-								<h2>&#127774; The quick brown fox</h2>
+					</label>
+
+				</div>
+				<div class="icon icon--grid-xl">
+					<label class="css-radio" for="auto">
+						Automatic Theme
+						<input type="radio" name="themeR" value="4" id="auto" onclick="saveTheme()">
+						<span class="check-mark"></span>
+						<div class="pair setting-preview">
+							<div>
+								<div class="section__content--settings primary--auto-left">
+									<h2>&#127772; The quick brown fox</h2>
+								</div>
+								<div class="section__content--settings secondary--auto-left">
+									<p>The quick brown fox jumps over the lazy dog</p>
+								</div>
 							</div>
-							<div class="section__content--settings secondary--auto-right">
-								<p>The quick brown fox jumps over the lazy dog</p>
+							<div>
+								<div class="section__content--settings primary--auto-right">
+									<h2>&#127774; The quick brown fox</h2>
+								</div>
+								<div class="section__content--settings secondary--auto-right">
+									<p>The quick brown fox jumps over the lazy dog</p>
+								</div>
 							</div>
 						</div>
-					</div>
-				</label>
+					</label>
 
+				</div>
 			</div>
 		</div>
 	</div>
@@ -172,7 +173,7 @@
 		<div class="section__content">
 			<h2>Text Size:</h2>
 			<div class="row">
-				<div class="icon icon--setting">
+				<div class="icon icon--grid-xl">
 					<label class="css-radio" for="small">
 						Small
 						<input type="radio" name="textR" value="1" id="small" checked="checked" onclick="saveText()">
@@ -188,7 +189,7 @@
 					</label>
 
 				</div>
-				<div class="icon icon--setting">
+				<div class="icon icon--grid-xl">
 					<label class="css-radio" for="med">
 						Medium
 						<input type="radio" name="textR" value="2" id="med" onclick="saveText()">
@@ -204,7 +205,7 @@
 					</label>
 
 				</div>
-				<div class="icon icon--setting">
+				<div class="icon icon--grid-xl">
 					<label class="css-radio" for="large">
 						Large
 						<input type="radio" name="textR" value="3" id="large" onclick="saveText()">
@@ -229,7 +230,7 @@
 		<div class="section__content">
 			<h2>Shape:</h2>
 			<div class="row">
-				<div class="icon icon--setting">
+				<div class="icon icon--grid-xl">
 					<label class="css-radio" for="square">
 						Square
 						<input type="radio" name="shapeR" value="1" id="square" checked="checked" onclick="saveShape()">
@@ -242,7 +243,7 @@
 					</label>
 
 				</div>
-				<div class="icon icon--setting">
+				<div class="icon icon--grid-xl">
 					<label class="css-radio" for="circle">
 						Circle
 						<input type="radio" name="shapeR" value="2" id="circle" onclick="saveShape()">
@@ -254,33 +255,34 @@
 						</div>
 					</label>
 
+
 				</div>
-			</div>
-			<div class="icon icon--setting">
-				<label class="css-radio" for="squircle">
-					Squircle
-					<input type="radio" name="shapeR" value="3" id="squircle" onclick="saveShape()">
-					<span class="check-mark"></span>
-					<div class="setting-preview three">
-						<div class="pwa--squircle"><img src="images/page/brainf.png" alt="Brainf"></div>
-						<div class="pwa--squircle"><img src="images/page/happyshibe.png" alt="Happyshibe"></div>
-						<div class="pwa--squircle"><img src="images/page/android.png" alt="Android"></div>
-					</div>
-				</label>
+				<div class="icon icon--grid-xl">
+					<label class="css-radio" for="squircle">
+						Squircle
+						<input type="radio" name="shapeR" value="3" id="squircle" onclick="saveShape()">
+						<span class="check-mark"></span>
+						<div class="setting-preview three">
+							<div class="pwa--squircle"><img src="images/page/brainf.png" alt="Brainf"></div>
+							<div class="pwa--squircle"><img src="images/page/happyshibe.png" alt="Happyshibe"></div>
+							<div class="pwa--squircle"><img src="images/page/android.png" alt="Android"></div>
+						</div>
+					</label>
 
-			</div>
-			<div class="icon icon--setting">
-				<label class="css-radio" for="teardrop">
-					Teardrop
-					<input type="radio" name="shapeR" value="4" id="teardrop" onclick="saveShape()">
-					<span class="check-mark"></span>
-					<div class="setting-preview three">
-						<div class="pwa--teardrop"><img src="images/page/brainf.png" alt="Brainf"></div>
-						<div class="pwa--teardrop"><img src="images/page/happyshibe.png" alt="Happyshibe"></div>
-						<div class="pwa--teardrop"><img src="images/page/android.png" alt="Android"></div>
-					</div>
-				</label>
+				</div>
+				<div class="icon icon--grid-xl">
+					<label class="css-radio" for="teardrop">
+						Teardrop
+						<input type="radio" name="shapeR" value="4" id="teardrop" onclick="saveShape()">
+						<span class="check-mark"></span>
+						<div class="setting-preview three">
+							<div class="pwa--teardrop"><img src="images/page/brainf.png" alt="Brainf"></div>
+							<div class="pwa--teardrop"><img src="images/page/happyshibe.png" alt="Happyshibe"></div>
+							<div class="pwa--teardrop"><img src="images/page/android.png" alt="Android"></div>
+						</div>
+					</label>
 
+				</div>
 			</div>
 		</div>
 	</div>
