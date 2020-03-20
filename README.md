@@ -1,16 +1,13 @@
-<p float="left">
-<a href="../../"><img src="https://img.shields.io/github/languages/top/fredhappyface/PWA.Home.svg?style=flat-square" alt="Github top language"></a>
-<a href="https://www.codacy.com/manual/FredHappyface/PWA.Home"><img src="https://img.shields.io/codacy/grade/4c0aca77613b4a068a567cfa8296df9c.svg?style=flat-square" alt="Codacy grade"></a>
-<a href="https://www.codacy.com/manual/FredHappyface/PWA.Home"><img src="https://img.shields.io/codacy/coverage/4c0aca77613b4a068a567cfa8296df9c.svg?style=flat-square" alt="Codacy coverage"></a>
-<a href="../../"><img src="https://img.shields.io/github/repo-size/fredhappyface/PWA.Home.svg?style=flat-square" alt="Repository size"></a>
-<a href="../../issues"><img src="https://img.shields.io/github/issues/fredhappyface/PWA.Home.svg?style=flat-square" alt="Issues"></a>
-<a href="/LICENSE.md"><img src="https://img.shields.io/github/license/fredhappyface/PWA.Home.svg?style=flat-square" alt="License"></a>
-<a href="../../commits/master"><img src="https://img.shields.io/github/commit-activity/m/fredhappyface/PWA.Home.svg?style=flat-square" alt="Commit activity"></a>
-<a href="../../commits/master"><img src="https://img.shields.io/github/last-commit/fredhappyface/PWA.Home.svg?style=flat-square" alt="Last commit"></a>
-</p>
+[![Github top language](https://img.shields.io/github/languages/top/FHPWA/Home.svg?style=for-the-badge)](../../)
+[![Codacy grade](https://img.shields.io/codacy/grade/[codacy-proj-id].svg?style=for-the-badge)](https://www.codacy.com/manual/FHPWA/Home)
+[![Repository size](https://img.shields.io/github/repo-size/FHPWA/Home.svg?style=for-the-badge)](../../)
+[![Issues](https://img.shields.io/github/issues/FHPWA/Home.svg?style=for-the-badge)](../../issues)
+[![License](https://img.shields.io/github/license/FHPWA/Home.svg?style=for-the-badge)](/LICENSE.md)
+[![Commit activity](https://img.shields.io/github/commit-activity/m/FHPWA/Home.svg?style=for-the-badge)](../../commits/master)
+[![Last commit](https://img.shields.io/github/last-commit/FHPWA/Home.svg?style=for-the-badge)](../../commits/master)
 
+# Home
 
-# PWA.Home
 
 <img src="readme-assets/icons/name.png" alt="Project Icon" width="750">
 
@@ -19,10 +16,10 @@ other web-based projects, information on projects and supported
 browsers (see below) and a settings menu with themes, icon
 shapes (Home only) and text size options.
 
-Find the site on https://FredHappyface.github.io/PWA.Home
+Find the site on https://FHPWA.github.io/home
 
 ## Language information
-PWA.Home is built with HTML5, CSS3 and JavaScript
+Home is built with HTML5, CSS3 and JavaScript
 
 ## Changelog
 See the [CHANGELOG](/CHANGELOG.md) for more information.

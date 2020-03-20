@@ -3,10 +3,10 @@
 
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="https://fredhappyface.github.io/css/main.css">
+	<link rel="stylesheet" type="text/css" href="https://FHPWA.github.io/css/main.css">
 	<script>
 		if ("serviceWorker" in navigator) {
-			navigator.serviceWorker.register("/PWA.Home/sw.js", { scope: "/PWA.Home/" });
+			navigator.serviceWorker.register("/home/sw.js", { scope: "/home/" });
 		}
 		/* read data from local storage and set css vars*/
 		let settingData = JSON.parse(localStorage.getItem('com.fredhappyface'));
@@ -29,7 +29,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!--Android app icon-->
-	<link rel="manifest" href="/PWA.Home/manifest.json">
+	<link rel="manifest" href="/home/manifest.json">
 	<meta name="theme-color" content="#5270ff" />
 
 	<!--iOS touch icon-->
@@ -42,7 +42,7 @@
 	<!--Windows 8, 10 tile -->
 	<meta name="msapplication-TileColor" content="#5270ff">
 	<meta name="msapplication-TileImage" sizes="150x150" content="images/appicons/square-180.png">
-	<meta name="msapplication-starturl" content="/PWA.Home/">
+	<meta name="msapplication-starturl" content="/home/">
 
 	<!--Title-->
 	<title>FredHappyface About</title>
@@ -149,7 +149,7 @@
 
 
 
-	<script src="https://fredhappyface.github.io/scripts/script.js"></script>
+	<script src="https://FHPWA.github.io/scripts/script.js"></script>
 
 
 </body>
