@@ -16,7 +16,7 @@ other web-based projects, information on projects and supported
 browsers (see below) and a settings menu with themes, icon
 shapes (Home only) and text size options.
 
-Find the site on https://FHPWA.github.io/home
+Find the site on https://fredhappyface.com/home
 
 ## Language information
 Home is built with HTML5, CSS3 and JavaScript
