@@ -1,5 +1,5 @@
 [![Github top language](https://img.shields.io/github/languages/top/FHPWA/Home.svg?style=for-the-badge)](../../)
-[![Codacy grade](https://img.shields.io/codacy/grade/[codacy-proj-id].svg?style=for-the-badge)](https://www.codacy.com/manual/FHPWA/Home)
+[![Codacy grade](https://img.shields.io/codacy/grade/86725ffdc490436f82adbfd8c86fdd56.svg?style=for-the-badge)](https://www.codacy.com/gh/FHPWA/Home)
 [![Repository size](https://img.shields.io/github/repo-size/FHPWA/Home.svg?style=for-the-badge)](../../)
 [![Issues](https://img.shields.io/github/issues/FHPWA/Home.svg?style=for-the-badge)](../../issues)
 [![License](https://img.shields.io/github/license/FHPWA/Home.svg?style=for-the-badge)](/LICENSE.md)
