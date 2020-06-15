@@ -1,27 +1,27 @@
 {
-  "name": "FredHappyface",
-  "short_name": "FredHappyface",
-  "lang": "en-GB",
-  "start_url": "/home/",
-  "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#5270ff",
-  "icons": [
-    {
-      "src": "/home/images/appicons/round-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/home/images/appicons/round-512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    },
-    {
-      "src": "/home/images/appicons/mask.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
-    }
-   ]
+	"name": "FredHappyface",
+	"short_name": "FredHappyface",
+	"lang": "en-GB",
+	"start_url": "/home/",
+	"display": "standalone",
+	"background_color": "#000000",
+	"theme_color": "#5270ff",
+	"icons": [
+		{
+			"src": "/home/images/appicons/round-192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/home/images/appicons/round-512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		},
+		{
+			"src": "/home/images/appicons/mask.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "maskable"
+		}
+	]
 }
