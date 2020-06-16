@@ -23,5 +23,40 @@
 			"type": "image/png",
 			"purpose": "maskable"
 		}
+	],
+	"shortcuts": [
+		{
+			"name": "Home",
+			"url": "/home/index.html",
+			"icons": [
+				{
+					"src": "/home/images/shorticons/index.png",
+					"sizes": "192x192",
+					"type": "image/png"
+				}
+			]
+		},
+		{
+			"name": "About",
+			"url": "/home/info.html",
+			"icons": [
+				{
+					"src": "/home/images/shorticons/info.png",
+					"sizes": "192x192",
+					"type": "image/png"
+				}
+			]
+		},
+		{
+			"name": "Settings",
+			"url": "/home/settings.html",
+			"icons": [
+				{
+					"src": "/home/images/shorticons/settings.png",
+					"sizes": "192x192",
+					"type": "image/png"
+				}
+			]
+		}
 	]
 }
